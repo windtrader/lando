@@ -57,6 +57,21 @@ config:
   #
   # See: https://backdropcms.org/requirements
   #
+  # One thing I find useful especially when working on one app consistently is to
+  # set a static database port that persists across lando restarts.  To do that
+  # comment out this line and override the recipe in the services section below
+  # with:
+  #   services:
+  #     database:
+  #       type: mariadb
+  #       portforward: 3307
+  #
+  # Where you change 3307 to any port you like (that is not already taken). The
+  # advantage is the port will persist across reboots and you can for example
+  # have a shortcut in SequelPro or a DB management app that does not require
+  # updating all the time.  The downside is you have to manage these ports and
+  # make sure that no other app is on the same DB port as any other.
+  #
   database: mariadb
 
   # Optionally activate xdebug
