@@ -8,5 +8,5 @@ Preflight Checks
 Optional checks
 ---------------
 
-1.  If you already have Docker installed it needs to be set to factory defaults.
+1.  Lando installs Docker if not already installed. If already installed it needs to be set to factory defaults. 
 2.  If you are also running VirtualBox on Windows check out [this](./../issues/win-also-vb.md).
